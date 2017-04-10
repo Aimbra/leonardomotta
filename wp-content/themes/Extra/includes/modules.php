@@ -617,11 +617,11 @@ class ET_Builder_Module_Posts extends ET_Builder_Module {
 				$filter_title = esc_html__( 'Popular', 'extra' );
 				break;
 			case 'rating':
-				$filter_title = esc_html__( 'Top Rated', 'extra' );
+				$filter_title = esc_html__( 'Mais votados', 'extra' );
 				break;
 			case 'date':
 			default:
-				$filter_title = esc_html__( 'Latest', 'extra' );
+				$filter_title = esc_html__( 'Recentes', 'extra' );
 				break;
 		}
 
