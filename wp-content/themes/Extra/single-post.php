@@ -94,7 +94,7 @@
 							<?php } ?>
 							<div class="post-footer">
 								<div class="social-icons ed-social-share-icons">
-									<p class="share-title"><?php esc_html_e( 'Share:', 'extra' ); ?></p>
+									<p class="share-title"><?php esc_html_e( 'Compartilhe:', 'extra' ); ?></p>
 									<?php extra_post_share_links(); ?>
 								</div>
 								<?php if ( extra_is_post_rating_enabled() ) { ?>
@@ -132,7 +132,7 @@
 						if ( extra_is_post_author_box() ) { ?>
 						<div class="et_extra_other_module author-box vcard">
 							<div class="author-box-header">
-								<h3><?php esc_html_e( 'About The Author', 'extra' ); ?></h3>
+								<h3><?php esc_html_e( 'Sobre o autor', 'extra' ); ?></h3>
 							</div>
 							<div class="author-box-content clearfix">
 								<div class="author-box-avatar">

@@ -311,13 +311,13 @@ function extra_rating_stars_display( $post_id = 0 ) {
 	$post_id = empty( $post_id ) ? get_the_ID() : $post_id;
 
 	if ( $rating = extra_get_user_post_rating( $post_id ) ) {
-		$output = '<p id="rate-title" class="rate-title">' . esc_html__( 'Your Rating:', 'extra' ) . '</p>';
+		$output = '<p id="rate-title" class="rate-title">' . esc_html__( 'Seu voto:', 'extra' ) . '</p>';
 		$output .= '<div id="rated-stars">' . extra_make_fixed_stars( $rating ) . '</div>';
 
 	} else {
-		$title = esc_html__( 'Rate:', 'extra' );
+		$title = esc_html__( 'Vote:', 'extra' );
 
-		$output = '<p id="rate-title" class="rate-title">' . esc_html__( 'Rate:', 'extra' ) . '</p>';
+		$output = '<p id="rate-title" class="rate-title">' . esc_html__( 'Vote:', 'extra' ) . '</p>';
 		$output .= '<div id="rating-stars"></div>';
 		$output .= '<input type="hidden" id="post_id" value="' . $post_id . '" />';
 	}
