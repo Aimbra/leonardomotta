@@ -516,7 +516,7 @@ class ET_Builder_Module_Posts extends ET_Builder_Module {
 		$output .= sprintf( '<label><input type="checkbox" name="%1$s" value="%2$s" <%%= _.contains( %4$s, \'%2$s\' ) ? checked=\'checked\' : \'\' %%> > %3$s</label><br/>',
 			esc_attr( $name ),
 			esc_attr( '0' ),
-			esc_html__( 'All', 'extra' ),
+			esc_html__( 'Todos', 'extra' ),
 			esc_attr( $temp_name )
 		);
 
@@ -607,7 +607,7 @@ class ET_Builder_Module_Posts extends ET_Builder_Module {
 		} else if ( ! empty( $this->shortcode_atts['term_name'] ) ) {
 			$category_name = $this->shortcode_atts['term_name'];
 		} else {
-			$category_name = esc_html__( 'All', 'extra' );
+			$category_name = esc_html__( 'Todos', 'extra' );
 		}
 
 		$this->shortcode_atts['is_all_categories'] = (bool) empty( $this->shortcode_atts['term_name'] );
@@ -1552,7 +1552,7 @@ class ET_Builder_Module_Tabbed_Posts_Tab extends ET_Builder_Module_Posts {
 			'echo'            => 0,
 			'name'            => $this->get_field_name( $field ),
 			'hierarchical'    => 1,
-			'show_option_all' => esc_html__( 'All', 'extra' ),
+			'show_option_all' => esc_html__( 'Todos', 'extra' ),
 			'walker'          => new Extra_Walker_CategoryDropdown,
 		);
 		$output = wp_dropdown_categories( $dropdown_args );
@@ -1574,7 +1574,7 @@ class ET_Builder_Module_Tabbed_Posts_Tab extends ET_Builder_Module_Posts {
 		}
 
 		if ( empty( $term ) ) {
-			$this->shortcode_atts['term_name'] = esc_html__( 'All', 'extra' );
+			$this->shortcode_atts['term_name'] = esc_html__( 'Todos', 'extra' );
 			$this->shortcode_atts['term_color'] = et_builder_accent_color();
 		}
 

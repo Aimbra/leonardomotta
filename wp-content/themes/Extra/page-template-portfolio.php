@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="et_filterable_portfolio">
 					<ul id="portfolio_filter" class="filterable_portfolio_filter" >
 						<li class="filter-toggle">Filter Projects</li>
-						<li><a href="#all" title="<?php esc_attr_e( 'All', 'extra' ); ?>"><?php esc_html_e( 'All', 'extra' ); ?></a></li>
+						<li><a href="#all" title="<?php esc_attr_e( 'Todos', 'extra' ); ?>"><?php esc_html_e( 'All', 'extra' ); ?></a></li>
 						<?php foreach ( $portfolio_options['project_categories'] as $category ) { ?>
 							<?php
 							printf( '<li><a href="#%1$s" title="%2$s" rel="%1$s">%3$s</a></li>',

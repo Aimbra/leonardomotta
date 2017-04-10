@@ -697,7 +697,7 @@ class Extra_Authors_Page_Template_Meta_Box extends Extra_Page_Template_Meta_Box 
 		echo '<div class="wp-tab-panel"><ul class="categorychecklist checklist">';
 
 		printf( '<li><label><input type="checkbox" name="_authors_page_authors_all" class="check_all" value="1" %2$s> %1$s</label></li>',
-			esc_html__( 'All', 'extra' ),
+			esc_html__( 'Todos', 'extra' ),
 			checked( $authors_all, '1' )
 		);
 
@@ -755,7 +755,7 @@ class Extra_Blog_Feed_Page_Template_Meta_Box extends Extra_Page_Template_Meta_Bo
 				%3$s
 			</ul></div>',
 			empty( $field['value'] ) ? ' checked="checked"' : '',
-			esc_html__( 'All', 'extra' ),
+			esc_html__( 'Todos', 'extra' ),
 			$output
 		);
 
@@ -917,7 +917,7 @@ class Extra_Sitemap_Page_Template_Meta_Box extends Extra_Page_Template_Meta_Box 
 		echo '<div class="wp-tab-panel"><ul class="categorychecklist checklist">';
 
 		printf( '<li><label><input type="checkbox" class="check_all" %2$s> %1$s</label></li>',
-			esc_html__( 'All', 'extra' ),
+			esc_html__( 'Todos', 'extra' ),
 			( ! empty( $field['default'] ) && 'all' == $field['default'] ? ' checked="checked"' : '' )
 		);
 
@@ -1058,7 +1058,7 @@ class Extra_Sitemap_Page_Template_Meta_Box extends Extra_Page_Template_Meta_Box 
 		echo '<div id="sitemap-sections" class="wp-tab-panel"><ul class="checklist">';
 
 		printf( '<li><label><input type="checkbox" name="_sitemap_page_sections_all" class="check_all" value="1" %2$s> %1$s</label></li>',
-			esc_html__( 'All', 'extra' ),
+			esc_html__( 'Todos', 'extra' ),
 			checked( count( $checked_sections ) == count( $sections ), true, false )
 		);
 
