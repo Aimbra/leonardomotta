@@ -649,7 +649,7 @@ function extra_get_post_author_link( $post_id = 0 ) {
 	$link = sprintf(
 		'<a href="%1$s" class="url fn" title="%2$s" rel="author">%3$s</a>',
 		esc_url( get_author_posts_url( $author->ID, $author->user_nicename ) ),
-		esc_attr( sprintf( __( 'Posts by %s' ), $author->display_name ) ),
+		esc_attr( sprintf( __( 'Postado por %s' ), $author->display_name ) ),
 		esc_html( $author->display_name )
 	);
 	return $link;
@@ -1433,7 +1433,7 @@ function et_get_post_meta_settings( $type = 'all' ) {
 
 	$meta_args = array(
 		'author_link'    => in_array( 'author', $post_meta_options ),
-		'author_link_by' => et_get_safe_localization( __( 'Posted by %s', 'extra' ) ),
+		'author_link_by' => et_get_safe_localization( __( 'Postado por %s', 'extra' ) ),
 		'post_date'      => in_array( 'date', $post_meta_options ),
 		'categories'     => in_array( 'categories', $post_meta_options ),
 		'comment_count'  => in_array( 'comments', $post_meta_options ),
@@ -1462,7 +1462,7 @@ function extra_display_archive_post_meta() {
 
 	$meta_args = array(
 		'author_link'    => in_array( 'author', $post_meta_options ),
-		'author_link_by' => et_get_safe_localization( __( 'Posted by %s', 'extra' ) ),
+		'author_link_by' => et_get_safe_localization( __( 'Postado por %s', 'extra' ) ),
 		'post_date'      => in_array( 'date', $post_meta_options ),
 		'categories'     => in_array( 'categories', $post_meta_options ),
 		'comment_count'  => in_array( 'comments', $post_meta_options ),
@@ -1483,7 +1483,7 @@ function extra_display_single_post_meta() {
 
 	$meta_args = array(
 		'author_link'    => in_array( 'author', $post_meta_options ),
-		'author_link_by' => et_get_safe_localization( __( 'Posted by %s', 'extra' ) ),
+		'author_link_by' => et_get_safe_localization( __( 'Postado por %s', 'extra' ) ),
 		'post_date'      => in_array( 'date', $post_meta_options ),
 		'categories'     => in_array( 'categories', $post_meta_options ),
 		'comment_count'  => in_array( 'comments', $post_meta_options ),
@@ -1497,7 +1497,7 @@ function et_extra_display_post_meta( $args = array() ) {
 	$default_args = array(
 		'post_id'        => get_the_ID(),
 		'author_link'    => true,
-		'author_link_by' => et_get_safe_localization( __( 'by %s', 'extra' ) ),
+		'author_link_by' => et_get_safe_localization( __( 'Por %s', 'extra' ) ),
 		'post_date'      => true,
 		'date_format'    => et_get_option( 'extra_date_format', '' ),
 		'categories'     => true,
