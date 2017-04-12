@@ -67,7 +67,7 @@ while ( $module_posts->have_posts() ) : $module_posts->the_post();
 						}
 						?>
 
-						<a class="<?php echo esc_attr( $read_more_class ); ?>" data-icon="<?php echo esc_attr( $data_icon ); ?>" href="<?php echo esc_url( $et_permalink ); ?>"><?php esc_html_e( 'Read More', 'extra' ); ?></a>
+						<a class="<?php echo esc_attr( $read_more_class ); ?>" data-icon="<?php echo esc_attr( $data_icon ); ?>" href="<?php echo esc_url( $et_permalink ); ?>"><?php esc_html_e( 'Leia mais', 'extra' ); ?></a>
 					<?php }
 				} else {
 					echo extra_get_de_buildered_content();

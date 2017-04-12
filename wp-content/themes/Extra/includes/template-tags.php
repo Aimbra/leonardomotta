@@ -77,7 +77,7 @@ function extra_get_the_post_comments_link( $post_id = 0 ) {
 		'<a class="comments-link" href="%s">%d <span title="%s" class="comment-bubble post-meta-icon"></span></a>',
 		esc_attr( get_the_permalink( $post_id ) . '#comments' ),
 		esc_html( get_comments_number( $post_id ) ),
-		esc_attr( __( 'comment count', 'extra' ) )
+		esc_attr( __( 'Número de comentários', 'extra' ) )
 	);
 }
 
@@ -596,9 +596,9 @@ function extra_header_search_field( $echo = true ) {
 			<button class="et-search-submit"></button>
 		</form>',
 		esc_url( home_url( '/' ) ),
-		esc_attr_x( 'Search', 'placeholder', 'extra' ),
+		esc_attr_x( 'Busca', 'placeholder', 'extra' ),
 		get_search_query(),
-		esc_attr_x( 'Search for:', 'label', 'extra' )
+		esc_attr_x( 'Buscar por:', 'label', 'extra' )
 	);
 
 	if ( $echo ) {

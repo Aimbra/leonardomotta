@@ -5,7 +5,7 @@
 		<div id="content-area" class="<?php extra_sidebar_class(); ?> clearfix">
 			<div class="et_pb_extra_column_main">
 				<?php if ( is_search() ) { ?>
-					<h1><?php printf( esc_html__( 'Search Results for: %s', 'extra' ), get_search_query() ); ?></h1>
+					<h1><?php printf( esc_html__( 'Seus resultados para: %s', 'extra' ), get_search_query() ); ?></h1>
 				<?php } else if ( is_archive() ) { ?>
 					<h1><?php the_archive_title(); ?></h1>
 				<?php } ?>

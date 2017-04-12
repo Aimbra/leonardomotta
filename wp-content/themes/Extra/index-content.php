@@ -35,7 +35,7 @@
 								et_truncate_post( $excerpt_length );
 							}
 							?></p>
-							<a class="read-more-button" href="<?php the_permalink(); ?>"><?php echo esc_html__( 'Read More', 'extra' ); ?></a>
+							<a class="read-more-button" href="<?php the_permalink(); ?>"><?php echo esc_html__( 'Leia mais', 'extra' ); ?></a>
 						</div>
 					</div>
 					<?php } ?>
@@ -45,7 +45,7 @@
 	else :
 		?>
 		<article class='nopost'>
-			<h5><?php esc_html_e( 'Sorry, No Posts Found', 'extra' ); ?></h5>
+			<h5><?php esc_html_e( 'Desculpe, artigo não encontrado', 'extra' ); ?></h5>
 		</article>
 		<?php
 	endif;

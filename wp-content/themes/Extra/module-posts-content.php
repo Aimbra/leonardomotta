@@ -103,6 +103,6 @@
 	<?php wp_reset_postdata(); ?>
 <?php else: ?>
 	<article class='nopost'>
-		<h5><?php esc_html_e( 'Sorry, No Posts Found', 'extra' ); ?></h5>
+		<h5><?php esc_html_e( 'Desculpe, nenhum artigo encontrado.', 'extra' ); ?></h5>
 	</article>
 <?php endif;

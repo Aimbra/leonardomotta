@@ -59,7 +59,7 @@
 
 								<!-- ET Trending Label -->
 								<h4 id="et-trending-label">
-									<?php esc_html_e( 'TRENDING:', 'extra' ); ?>
+									<?php esc_html_e( 'TENDENDO:', 'extra' ); ?>
 								</h4>
 
 								<!-- ET Trending Post Loop -->

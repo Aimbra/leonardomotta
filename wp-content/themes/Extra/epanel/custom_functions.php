@@ -920,11 +920,11 @@ if ( ! function_exists( 'elegant_titles_filter' ) ) {
 			} else if ( is_author() ) {
 				$page_title = get_the_author_meta( 'display_name', get_query_var( 'author' ) );
 			} else if ( is_date() ) {
-				$page_title = esc_html__( 'Archives', $themename );
+				$page_title = esc_html__( 'Arquivos', $themename );
 			} else if ( is_search() ) {
-				$page_title = sprintf( esc_html__( 'Search results for "%s"', $themename ), esc_attr( get_search_query() ) );
+				$page_title = sprintf( esc_html__( 'Seus resultados para sua pesquisa "%s"', $themename ), esc_attr( get_search_query() ) );
 			} else if ( is_404() ) {
-				$page_title = esc_html__( '404 Not Found', $themename );
+				$page_title = esc_html__( '404 - Página não encontrada', $themename );
 			}
 			if ( $seo_index_type == 'BlogName | Category name' ) {
 				$custom_title = $sitename . esc_html( $seo_index_separate ) . $page_title;
@@ -1007,7 +1007,7 @@ if ( ! function_exists( 'elegant_description' ) ) {
 
 			if ( is_search() && ! $description_added ) {
 				$description_text = $is_pre_4_4 ? wp_title( '', false, '' ) : sprintf(
-					esc_html__( 'Search Results for: %s', $themename ),
+					esc_html__( 'Seus resultados de busca: %s', $themename ),
 					get_search_query()
 				);
 

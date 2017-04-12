@@ -2078,7 +2078,7 @@ class ET_Builder_Module_Posts_Blog_Feed extends ET_Builder_Module_Posts {
 			),
 			'button'                => array(
 				'read_more' => array(
-					'label' => esc_html__( 'Read More Button', 'et_builder' ),
+					'label' => esc_html__( 'Botão Leia mais', 'et_builder' ),
 					'css'   => array(
 						'main' => "{$this->main_css_element} .hentry .read-more-button",
 					),
@@ -2488,7 +2488,7 @@ class ET_Builder_Module_Posts_Blog_Feed_Masonry extends ET_Builder_Module_Posts_
 			),
 			'button'                => array(
 				'read_more' => array(
-					'label' => esc_html__( 'Read More Button', 'et_builder' ),
+					'label' => esc_html__( 'Botão Leia mais', 'et_builder' ),
 					'css'   => array(
 						'main' => "{$this->main_css_element} .hentry .read-more-button",
 					),

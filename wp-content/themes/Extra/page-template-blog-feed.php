@@ -68,7 +68,7 @@ get_header(); ?>
 														echo extra_get_de_buildered_content();
 													}
 													?></p>
-													<a class="read-more-button" href="<?php the_permalink(); ?>"><?php echo esc_html__( 'Read More', 'extra' ); ?></a>
+													<a class="read-more-button" href="<?php the_permalink(); ?>"><?php echo esc_html__( 'Leia mais', 'extra' ); ?></a>
 												</div>
 											</div>
 											<?php } ?>
@@ -79,7 +79,7 @@ get_header(); ?>
 							else :
 								?>
 								<article class='nopost'>
-									<h5><?php esc_html_e( 'Sorry, No Posts Found', 'extra' ); ?></h5>
+									<h5><?php esc_html_e( 'Desculpe, artigo não encontrada', 'extra' ); ?></h5>
 								</article>
 								<?php
 							endif;
@@ -96,7 +96,7 @@ get_header(); ?>
 				endwhile;
 			else :
 			?>
-				<h2><?php esc_html_e( 'Post not found', 'extra' ); ?></h2>
+				<h2><?php esc_html_e( 'Artigo não encontrado', 'extra' ); ?></h2>
 			<?php
 			endif;
 			?>
