@@ -5,6 +5,11 @@
  */
  
 
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
 #linkback {
   font-size: small;
   text-align: center;
@@ -41,5 +46,8 @@
   }
   #login-button a {
     padding: 5px;
+  }
+  #social a i {
+    margin: 5px;
   }
 }

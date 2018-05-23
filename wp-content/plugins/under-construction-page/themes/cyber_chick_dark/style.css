@@ -1,10 +1,10 @@
 /*
- * UnderConstructionPage 
+ * UnderConstructionPage
  * Cyber Chick Dark theme CSS
  * (c) Web factory Ltd, 2015 - 2017
  */
- 
- 
+
+
 html {
    height: 100%;
    padding: 0;
@@ -16,13 +16,13 @@ body {
   font-size: 14px;
   line-height: 120%;
   color: #ffffff;
-  background: #212f3c;
+  background: #1b2b3a;
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-  
+
 #hero-image {
   text-align: center;
   margin: 0 auto 10px auto;
